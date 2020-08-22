@@ -88,10 +88,10 @@ int main()
 	//	return -1;
 	//}
 
-	string s1;                                //默认初始化，s1是一个空串
-	string s2 = s1;                           //等价于s2(s1),s2是s1的副本
-	string s3 = "hello";                 //等价于s3("hello"),s3是字面值"value"的副本(除最后一个空字符)
-	string s4(10, 'c');                     //把s4初始化为由连续10个字符'c'组成的串
+	//string s1;                                //默认初始化，s1是一个空串
+	//string s2 = s1;                           //等价于s2(s1),s2是s1的副本
+	//string s3 = "hello";                 //等价于s3("hello"),s3是字面值"value"的副本(除最后一个空字符)
+	//string s4(10, 'c');                     //把s4初始化为由连续10个字符'c'组成的串
 
 	return 0;
 }
