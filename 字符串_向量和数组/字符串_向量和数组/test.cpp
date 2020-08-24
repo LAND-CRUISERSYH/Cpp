@@ -407,7 +407,7 @@ int main()
 	//}
 
 	/*读入一组整数并把它们存入一个vector对象，先输出第一个和最后一个元素的和，然后输出第二个和倒数第二个元素的和*/
-	vector<int> ivec;
+	/*vector<int> ivec;
 	int i;
 	while (cin >> i)
 		ivec.push_back(i);
@@ -426,6 +426,6 @@ int main()
 		}
 		cout << ivec[ivec.size() / 2];
 	}
-	cout << endl;
+	cout << endl;*/
 	return 0;
 }
