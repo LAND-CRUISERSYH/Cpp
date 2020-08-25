@@ -427,5 +427,116 @@ int main()
 		cout << ivec[ivec.size() / 2];
 	}
 	cout << endl;*/
+
+	///*将第一个字符改写成大写字母*/
+	//string s = "some string";
+	//if (s.begin() != s.end())                         //确保s非空
+	//{
+	//	auto it = s.begin();						 //it表示s的第一个字符
+	//	*it = toupper(*it);							//将当前字符改写成大写形式
+	//}
+	//cout << s << endl;
+
+	///*将第一个单词改写成大写字母*/
+	//string s = "hello world";
+	//for (auto it = s.begin(); it != s.end() && !isspace(*it); it++)  //依次处理s的字符直至处理完全部字符或遇到空白
+	//{
+	//	*it = toupper(*it);                                              //将当前字符改写成大写形式
+	//}
+	//cout << s << endl;
+
+	//vector<int>::iterator it;                            //it能读写vector<int>的元素
+	//string::iterator it2;                                 //it2能读写string对象中的字符
+	//vector<int>::const_iterator;                   //it3只能读元素，不能写元素
+	//string::const_iterator it4;							//it4只能读元素，不能写字符
+
+	//vector<int> v;
+	//const vector<int> v2; 
+	//auto it1 = v.begin();                       //it1的类型是vector<int>::iterator
+	//auto it2 = v2.begin();                    //it2的类型是vector<int>::const_iterator
+
+	/*vector<string> svec = { "hello","world","i","am","land_cruisersyh" };
+	for (auto it = svec.begin(); it != svec.end() && !it->empty(); it++)
+	{
+		for (auto it2 = it->begin(); it2 != it->end(); it2++)
+			*it2 = toupper(*it2);
+	}
+	for (auto s : svec)
+	{
+		cout << s << " ";
+	}
+	cout << endl;*/
+
+	///*创建一个含有10个整数的vector对象，使用迭代器将所有元素的值都变成原来的两倍*/
+	//vector<int> ivec = { 1,2,3,4,5,6,7,8,9,10 };
+	//for (auto it = ivec.begin(); it != ivec.end(); it++)
+	//{
+	//	(*it) = (*it) * 2;
+	//	cout << (*it) << " ";
+	//}
+	//cout << endl;
+
+	///*使用迭代器进行二分查找*/
+	//vector<int> text = { 1,2,3,4,5,6,7,8,9 };               //text必须是有序的
+	//int num = 7;
+	//auto beg = text.begin(), end = text.end();         //beg和end表示我们搜索的范围
+	//auto mid = text.begin() + (end - beg) / 2;                //初始状态下的中间点
+	//while (mid != end && *mid != num)                 //当还有元素尚未检查并且还没有找到num则继续执行循环
+	//{
+	//	if (num < *mid)                                 //如果要找的元素比*mid小，则在前半部分进行查找
+	//		end = mid;
+	//	else                                                     //如果要找的元素比*mid大，则在后半部分进行查找
+	//		beg = mid + 1;
+	//	mid = beg+(end-beg)/2;                   //新的中间点
+	//}
+
+	///*读入一组整数并存入vector对象，将每对相邻整数的和输出*/
+	//vector<int> ivec;
+	//int i;
+	//while (cin >> i)
+	//{
+	//	ivec.push_back(i);
+	//}
+	//for (auto it = ivec.begin(); it != ivec.end(); it += 2)
+	//{
+	//	if (it != ivec.end() - 1)
+	//		cout << *it + *(it + 1) << " ";
+	//	else
+	//	{
+	//		cout << *it;
+	//		break;
+	//	}
+	//}
+	//cout << endl;
+
+	///*读入一组整数并存入vector对象，先输出第一个和最后一个元素的和，接着输出第二个和倒数第二个元素的和，...*/
+	//vector<int> ivec;
+	//int i;
+	//while (cin >> i)
+	//	ivec.push_back(i);
+	//for (auto it = ivec.begin(), it2 = ivec.end() - 1; it <= it2; it++, it2--)
+	//{
+	//	if (it == it2)
+	//		cout << *it;
+	//	else
+	//		cout << *it + *it2 << " ";
+	//}
+	//cout << endl;
+
+	///*以10分为一个分数段统计成绩的数量*/
+	//vector<unsigned> ivec(11,0);
+	//unsigned grade;
+	//while (cin >> grade)
+	//{
+	//	if (grade <= 100)
+	//	{
+	//		(*(ivec.begin() + grade / 10))++;
+	//	}
+	//}
+	//for (auto i : ivec)
+	//{
+	//	cout << i << " ";
+	//}
+	//cout << endl;
 	return 0;
 }
