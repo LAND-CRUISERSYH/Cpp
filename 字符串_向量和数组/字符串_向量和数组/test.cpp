@@ -1,6 +1,7 @@
 ﻿#include<iostream>
 #include<string>
 #include<vector>
+//#include<iterator>
 
 using std::cin;                      //using声明，当我们使用名字cin时，从命名空间std中获取它
 using std::cout;
@@ -15,6 +16,8 @@ using std::vector;
 //	unsigned sales_volume = 0;
 //	double revenue = 0;
 //};
+string sa[10];
+int ia[10];
 int main()
 {
 	/*int i = 0;
@@ -538,5 +541,210 @@ int main()
 	//	cout << i << " ";
 	//}
 	//cout << endl;
+
+	//const unsigned sz = 3;
+	//int a1[sz] = { 0,1,2 };                                //含有三个元素的数组，元素值分别是0，1，2
+	//int a2[] = { 0,1,2 };                                    //含有三个元素的数组，元素值分别是0，1，2
+	//int a3[5] = { 0,1,2 };                                  //等价于a3[] = {0，1，2，0，0}
+	//string a4[3] = { "hi","bye" };                   //等价于a4[] = {"hi","bye",""};
+	//int a5[2] = { 0,1,2 };                             //错误，初始值过多
+
+	//char a1[] = { 'C','+','+' };                           //列表初始化，没有空字符
+	//char a2[] = { 'C','+','+','\0' };						//列表初始化，含有显式的空字符
+	//char a3[] = "C++";									//自动添加表示字符串结束的空字符
+	//const char a4[6] = "Daniel";					//错误，没有空间可存放空字符
+
+	//int *ptrs[10];                      //ptrs是含有十个整型指针的数组
+	//int &refs[10];						//错误；不存在引用的数组
+	//int(*Parray)[10];				//Parray指向一个含有十个整数的数组
+	//int(&arrRef)[10];				//arrRef引用一个含有十个整数的数组
+
+	//unsigned buf_size = 1024;
+	////int ia[buf_size];                             //错误，buf_size不是常量
+	//int ia2[4 * 7 - 14];                         //正确，数组大小为14
+	//char st[11] = "fundamental";         //错误，初始化长度超过数组长度
+
+	/*string sa2[10];
+	int ia2[10];*/
+	
+	///*定义一个含有10个int的数组，令每个元素的值就是其下标值*/
+	//int arr[10];
+	//for (int i = 0; i < 10; i++)
+	//{
+	//	arr[i] = i;
+	//	cout << arr[i] << " ";
+	//}
+	//cout << endl;
+
+	/*int arr[10];
+	int arr1[10];
+	for (int i = 0; i < 10; i++)
+	{
+		arr[i] = i;
+		arr1[i] = arr[i];
+		cout << arr1[i] << " ";
+	}
+	cout << endl;*/
+
+	/*vector<int> ivec;
+	vector<int> ivec1;
+	for (int i = 0; i < 10; i++)
+		ivec.push_back(i);
+	ivec1 = ivec;
+	for (auto i : ivec1)
+		cout << i << " ";
+	cout << endl;*/
+
+	/*int score[11];
+	int grade;
+	while(cin >> grade)
+	{
+		if (grade <= 100)
+			score[grade / 10]++;
+	}
+	for (auto i : score)
+		cout << i << " ";
+	cout << endl;*/
+
+	//int ia[] = { 0,1,2,3,4,5,6,7,8,9 };							//ia是一个含有10个整数的数组
+	//int *beg = begin(ia);                                 //指向ia首元素的指针
+	//int *last = end(ia);                                      //指向ia尾元素的下一位置的指针
+	
+	/*int a = 5;
+	int b = 6;
+	a += b - a;
+	cout << a << endl;*/
+
+	///*利用指针将数组中的元素置为0*/
+	//int arr[5] = { 1,2,3,4,5 };
+	//int *p = arr;
+	//for (int i = 0; i < 5; i++)
+	//	*(p + i) = 0;
+	//for (auto i : arr)
+	//	cout << i << " ";
+	//cout << endl;
+
+	///*比较两个数组是否相等*/
+	//int arr1[] = { 1,2,3,4,5 };
+	//int arr2[] = { 1,2,3,4,5 };
+	//int i = 0;
+	//while (i < 5)
+	//{
+	//	if (arr1[i] == arr2[i])
+	//		i++;
+	//	else
+	//		break;
+	//}
+	//if (i == 5)
+	//	cout << "相等" << endl;
+	//else
+	//	cout << "不等" << endl;
+
+	///*比较两个vector对象是否相等*/
+	//vector<int> ivec1 = { 1,2,3,4,5 };
+	//vector<int> ivec2 = { 2,2,3,4,5 };
+	//if (ivec1 == ivec2)
+	//	cout << "相等" << endl;
+	//else
+	//	cout << "不相等" << endl;
+
+	/*const char ca[] = { 'h','e','l','l','o' };
+	const char *cp = ca;
+	while (*cp)
+	{
+		cout << *cp << endl;
+		++cp;
+	}*/
+
+	///*比较两个string对象*/
+	//string s1 = "hello";
+	//string s2 = "world";
+	//if (s1 > s2)
+	//	cout << s1 << "大" << endl;
+	//else if (s1 == s2)
+	//	cout << "相等" << endl;
+	//else
+	//	cout << s2 << "大" << endl;
+
+	///*比较两个C风格字符串的内容*/
+	//const char s1[] = "hello";
+	//const char s2[] = "world";
+	//if (strcmp(s1, s2) == 0)
+	//	cout << "相等" << endl;
+	//else if (strcmp(s1, s2) > 0)
+	//	cout << "第一个字符串大" << endl;
+	//else
+	//	cout << "第二个字符串大" << endl;
+
+	/*char s1[] = "hello";
+	char s2[] = "world";
+	char s3[12];
+	char *p = s3;
+	strcpy(s3, s1);
+	strcat(s3, " ");
+	strcat(s3, s2);
+	while (*p)
+	{
+		cout << *p;
+		p++;
+	}
+	cout << endl;*/
+
+	///*用整形数组初始化一个vector对象*/
+	//int arr[5] = { 1,2,3,4,5 };
+	//vector<int> ivec(&arr[0], &arr[5]);
+	//for (auto i : ivec)
+	//{
+	//	cout << i << " ";
+	//}
+	//cout << endl;
+
+	///*将含有整数元素的vector对象拷贝给一个整型数组*/
+	//vector<int> ivec = { 1,2,3,4,5 };
+	//int arr[5];
+	//for (int i = 0; i < 5; i++)
+	//{
+	//	arr[i] = ivec[i];
+	//}
+	//for (auto i : arr)
+	//	cout << i << " ";
+	//cout << endl;
+
+	//int ia[3][4];					//大小为3的数组，每个元素是含有4个整数的数组
+	//int arr[10][20][30] = { 0 };     //大小为0的数组，它的每个元素都是大小为20的数组，这些数组的元素是含有30个整数的数组
+
+	/*constexpr size_t rowCnt = 3, colCnt = 4;
+	int arr[rowCnt][colCnt];
+	for (size_t i = 0; i != rowCnt; ++i)
+	{
+		for (size_t j = 0; j != colCnt; ++j)
+		{
+			arr[i][j] = i * colCnt + j;
+			cout << arr[i][j] << " ";
+		}
+		cout << endl;
+	}*/
+	
+	int arr[3][4] = { 0,1,2,3,4,5,6,7,8,9,10,11 };
+	for (int (&row)[4] : arr)
+	{
+		for (int col : row)
+			cout << col << " ";
+		cout << endl;
+	}
+	cout << endl;
+	for (int i = 0; i < 3; i++)
+	{
+		for (int j = 0; j < 4; j++)
+			cout << arr[i][j] << " ";
+		cout << endl;
+	}
+	cout << endl;
+	for (int(*i)[4] = arr; i != arr + 3; ++i)
+	{
+		for (int *j = *i; j != *i + 4; j++)
+			cout << *j << " ";
+		cout << endl;
+	}
 	return 0;
 }
