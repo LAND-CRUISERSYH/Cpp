@@ -78,6 +78,31 @@ int main()
 	//cout << sizeof(x) / sizeof(*x) << endl;               //10
 	//cout << sizeof(p) / sizeof(*p) << endl;               //1
 
-	vector<int> ivec = { 1,2,3,4,5,6,7,8,9 };
-	vector<int>::size_type cnt = ivec.size()
+	/*vector<int> ivec = { 1,2,3,4,5,6,7,8,9 };
+	vector<int>::size_type cnt = ivec.size()*/
+
+	/*int i = 5, j = 2;
+	double x = i / j;
+	double z = static_cast<double> (i) / j;
+	const char *cp;
+	char *p = const_cast<char*>(cp);
+	static_cast<string>(cp);
+	const_cast<string>(cp);
+	cout << x << endl;
+	cout << z << endl;*/
+
+	/*int i = 5;
+	double d = 2.4;
+	i *= static_cast<int>(d);
+	cout << i << endl;*/
+
+	int i;
+	double d;
+	const string *ps;
+	char *pc;
+	void *pv;
+	pv = const_cast<string*>(ps);
+	i = static_cast<int>(*pc);
+	pv = static_cast<void*>(&d);
+	pc = reinterpret_cast<char*>(pv);
 }
