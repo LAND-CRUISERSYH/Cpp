@@ -259,4 +259,8 @@ int main()
 		else
 			temp = s;
 	}
+	if (sum != 0)
+		cout << sum;
+	else
+		cout << "任何单词都没有连续出现过" << endl;
 }
