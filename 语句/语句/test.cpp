@@ -244,23 +244,58 @@ int main()
 	//cout << "字符序列fl的个数为: " << sum_fl << endl;
 	//cout << "字符序列fi的个数为: " << sum_fi << endl;
 
-	/*从标准输入中读取若干string对象并查找连续重复出现的单词
-		连续重复: 一个单词后面紧跟这个单词本身*/
-	string s;
-	string temp;
-	unsigned sum = 0;
-	cin >> temp;
-	while (cin >> s)
+	///*从标准输入中读取若干string对象并查找连续重复出现的单词
+	//	连续重复: 一个单词后面紧跟这个单词本身*/
+	//string s;
+	//string temp;
+	//unsigned sum = 0;
+	//cin >> temp;
+	//while (cin >> s)
+	//{
+	//	if (temp == s)
+	//	{
+	//		sum++;
+	//	}
+	//	else
+	//		temp = s;
+	//}
+	//if (sum != 0)
+	//	cout << sum;
+	//else
+	//	cout << "任何单词都没有连续出现过" << endl;
+
+	///*检验其中一个vector对象是否是另一个的前缀*/
+	//vector<int> ivec1 = { 1,2,3,4,5,6 };
+	//vector<int> ivec2 = { 1,2,3,5};
+	//int small_size = ivec1.size() > ivec2.size() ? ivec2.size() : ivec1.size();
+	//for (int i = 0; i < small_size; i++)
+	//{
+	//	if (ivec1[i] != ivec2[i])
+	//	{
+	//		cout << "不是" << endl;
+	//		return 0;
+	//	}
+	//}
+	//cout << "是" << endl;
+
+	/*do
 	{
-		if (temp == s)
-		{
-			sum++;
-		}
-		else
-			temp = s;
-	}
-	if (sum != 0)
-		cout << sum;
-	else
-		cout << "任何单词都没有连续出现过" << endl;
+		int v1, v2;
+		cout << "请输入两个数";
+		if (cin >> v1 >> v2)
+			cout << "和为: " << v1 + v2 << endl;
+	} while (cin);*/
+
+	///*使用do-while语句:首先提示用户输入两个string对象,然后挑出较短的那个输出*/
+	//string s1, s2;
+	//do
+	//{
+	//	cout << "请输入两个string对象: ";
+	//	cin >> s1 >> s2;
+	//	if (s1.size() < s2.size())
+	//		cout << s1 << endl;
+	//	else
+	//		cout << s2 << endl;
+	//} while(cin);
+	return 0;
 }
