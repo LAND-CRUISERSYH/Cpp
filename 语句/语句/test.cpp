@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<string>
+#include<stdexcept>
 
 using std::cout;
 using std::cin;
@@ -297,5 +298,78 @@ int main()
 	//	else
 	//		cout << s2 << endl;
 	//} while(cin);
+
+	///*从标准输入中读取string对象的序列直到连续出现两个相同的单词或者所有单词都读完为止*/
+	//string s;
+	//string temp;
+	//cin >> temp;
+	//int flag = 0;
+	//while (cin >> s)
+	//{
+	//	if (temp == s)
+	//	{
+	//		cout << s << endl;
+	//		flag = 1;
+	//		break;
+	//	}
+	//	else
+	//		temp = s;
+	//}
+	//if (flag == 0)
+	//{
+	//	cout << "没有任何单词重复" << endl;
+	//}
+
+	///*从标准输入中读取string对象的序列直到连续出现两个相同的单词或者所有单词都读完为止,使其找到的重复单词必须以大写字母开头*/
+	//string s;
+	//string temp;
+	//cin >> temp;
+	//int flag = 0;
+	//while (cin >> s&&!s.empty())
+	//{
+	//	if (temp == s&&(s[0]>='A'&&s[0]<='Z'))
+	//	{
+	//		cout << s << endl;
+	//		flag = 1;
+	//		break;
+	//	}
+	//	else
+	//		temp = s;
+	//}
+	//if (flag == 0)
+	//{
+	//	cout << "没有任何单词重复" << endl;
+	//}
+
+	///*从标准输入中读取两个整数，输出第一个数除以第二个数的结果*/
+	//int a, b;
+	//cin >> a >> b;
+	//cout << a / b << endl;
+
+	///*使得当第二个数是0时抛出异常，不要设定catch子句*/
+	//int a, b;
+	//cin >> a >> b;
+	//if (b == 0)
+	//	throw std::runtime_error("第二个数为0");
+	//cout << a / b << endl;
+
+	int a, b;
+	while (cin >> a >> b)
+	{
+		try {
+			if (b == 0)
+				throw std::runtime_error("除数不能为0");
+			cout << a / b << endl;
+		}
+		catch (std::runtime_error err)
+		{
+			cout << err.what();
+			cout << endl<<"是否要重新输入: ";
+			char c;
+			cin >> c;
+			if (!c || c == 'n')
+				break;
+		}
+	}
 	return 0;
 }
