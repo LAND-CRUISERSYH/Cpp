@@ -10,6 +10,14 @@ using std::string;
 using std::vector;
 using std::initializer_list;
 
+/*返回数组的引用并且该数组包含10个string对象*/
+string arr[10];
+string (&func())[10];
+using arrS = string[10];
+arrS &fun7();
+auto func8()->string(&)[10];
+decltype(arr) &func9();
+
 /*求数的阶乘*/
 int fact(int val)
 {
@@ -143,6 +151,34 @@ int sum_val(initializer_list<int> il)
 	}
 	return sum;
 }
+//
+///*因为含有不正确的返回值，所以这段代码无法通过编译*/
+//bool str_subrange(const string &str1, const string &str2)
+//{
+//	//大小相同:此时用普通的相等性判断结果作为返回值
+//	if (str1.size() == str2.size())
+//		return str1 == str2;                                                 //正确:==运算符返回布尔值
+//	//得到较短string对象的大小,
+//	auto size = (str1.size() < str2.size()) ? str1.size() : str2.size();
+//	//检查两个string对象的对应字符是否相等，以较短的字符串长度为限
+//	for (decltype(size) i = 0; i != size; i++)
+//	{
+//		if (str1[i] != str2[i])
+//			return;                      //错误:没有返回值
+//	}
+//	//错误(编译器未检查出):控制流可能尚未返回任何值就结束了函数的执行
+//}
+
+/*使用递归输出vector对象的内容*/
+void print_vector(vector<int> i,int n)
+{
+	if (n != -1)
+	{
+		cout << i[n] << " ";
+		n--;
+		print_vector(i, n);
+	}
+}
 
 
 int main(int argc,char **argv)
@@ -195,6 +231,9 @@ int main(int argc,char **argv)
 	}
 	cout << str << endl;*/
 
-	cout << sum_val({ 1,2,3,4,5,6,7,8,9,10}) << endl;
+	/*cout << sum_val({ 1,2,3,4,5,6,7,8,9,10}) << endl;*/
+
+	/*vector<int> ivec = { 1,2,3,4,5,6,7,8,9,10 };
+	print_vector(ivec, ivec.size()-1);*/
 	return 0;
 }
