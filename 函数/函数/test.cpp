@@ -180,6 +180,11 @@ void print_vector(vector<int> i,int n)
 	}
 }
 
+/*使用默认实参输出单词success和failure的单数形式和复数形式*/
+string make_plural(int ctr, const string &word, const string &ending = "s")
+{
+	return (ctr > 1) ? word + ending : word;
+}
 
 int main(int argc,char **argv)
 {
@@ -235,5 +240,13 @@ int main(int argc,char **argv)
 
 	/*vector<int> ivec = { 1,2,3,4,5,6,7,8,9,10 };
 	print_vector(ivec, ivec.size()-1);*/
+
+	/*int c = 'Z';
+	cout << c << endl;*/
+
+	//cout << "单词的单数形式: " << make_plural(1, "success", "es") << " " << make_plural(1, "failure") << endl;
+	//cout << "单词的复数形式: " << make_plural(2, "success", "es") << " " << make_plural(2, "failure") << endl;
+	
+	
 	return 0;
 }
