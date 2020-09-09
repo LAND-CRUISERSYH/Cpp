@@ -180,11 +180,56 @@ void print_vector(vector<int> i,int n)
 	}
 }
 
+void print()
+{
+	cout << __func__ << endl;
+}
+
+void print(int a)
+{
+	cout << "只有一个int型参数" << endl;
+}
+
+void print(int a, int b)
+{
+	cout << "有两个int型参数" << endl;
+}
+
+void print(double a, double b)
+{
+	cout << "有两个double型参数" << endl;
+}
+
+
 /*使用默认实参输出单词success和failure的单数形式和复数形式*/
 string make_plural(int ctr, const string &word, const string &ending = "s")
 {
 	return (ctr > 1) ? word + ending : word;
 }
+
+int func_54(int, int);
+
+int func_551(int a, int b)
+{
+	return a + b;
+}
+
+int func_552(int a, int b)
+{
+	return a - b;
+}
+
+int func_553(int a, int b)
+{
+	return a * b;
+}
+
+int func_554(int a, int b)
+{
+	return a / b;
+}
+
+vector<int(*)(int, int)> ivec = { func_551,func_552,func_553,func_554 };
 
 int main(int argc,char **argv)
 {
@@ -247,6 +292,17 @@ int main(int argc,char **argv)
 	//cout << "单词的单数形式: " << make_plural(1, "success", "es") << " " << make_plural(1, "failure") << endl;
 	//cout << "单词的复数形式: " << make_plural(2, "success", "es") << " " << make_plural(2, "failure") << endl;
 	
-	
+	//cout << __func__ << endl;
+
+	////print(2.56, 42);               //具有二义性
+	//print(42);                          //只有一个int型参数
+	//print(42, 0);						//有两个int型参数
+	//print(2.56, 3.14);					//有两个double型参数
+
+	for (auto f : ivec)
+	{
+		cout << f(10, 5) << endl;
+	}
+
 	return 0;
 }
