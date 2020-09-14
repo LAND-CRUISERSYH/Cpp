@@ -161,18 +161,90 @@
 //}
 /*--------------------------------------------------------------------------------*/
 #include<iostream>
-#include"Screen.h"
+#include<string>
+#include<vector>
+//#include"Screen.h"
 
 using namespace std;
 
+class Y;
+class X
+{
+	Y *p = NULL;
+};
+
+class Y
+{
+	X obj;
+};
+
+class NoDefault
+{
+public:
+	NoDefault(int i):item(i){}
+	int item;
+};
+
+class C
+{
+public:
+	C(NoDefault temp = 6):obj(temp){}
+private:
+	NoDefault obj;
+};
+
+class Sales_data
+{
+public:
+	Sales_data(string s, unsigned v, double p) :name(s), slae_vol(v), revenue(p*v) { cout << "三个参数的构造函数" << endl; }
+	void display() const;
+	Sales_data() :Sales_data("计算机操作系统", 10, 50) { cout << "计算机操作系统" << endl; }
+	Sales_data(string s) :Sales_data(s, 10, 60) { cout << "计算机网络" << endl; }
+	Sales_data(istream &is) :Sales_data() { read(is, *this); cout << "cin构造函数" << endl; }
+	istream &read(istream &is, Sales_data &item);
+private:
+	string name;
+	unsigned slae_vol;
+	double revenue;
+};
+
+void Sales_data::display() const
+{
+	cout << "书名" << name << endl;
+	cout << "销量" << slae_vol << endl;
+	cout << "销售额" << revenue << endl;
+}
+
+istream& Sales_data::read(istream &is, Sales_data &item)
+{
+	double price = 0;
+	is >> item.name >> item.slae_vol >> price;
+	item.revenue = item.slae_vol*price;
+	return is;
+}
+
 int main()
 {
-	Screen myScreen(5, 5, 'X');
+	/*Screen myScreen(5, 5, 'X');
 	myScreen.move(4, 0).set('#').display(cout);
 	myScreen.move(4, 1).set('#').display(cout);
 	cout << "\n";
 	myScreen.display(cout);
-	cout << "\n";
+	cout << "\n";*/
 
+	/*Sales_data book1("C++ Primer", 10, 50);
+	book1.display();*/
+
+	/*Sales_data book2;
+	book2.display();*/
+
+	/*Sales_data book3("计算机网络");
+	book3.display();*/
+
+	/*Sales_data book4(cin);
+	book4.display();*/
+
+	C c;
+	vector<C> vec(10);
 	return 0;
 }
