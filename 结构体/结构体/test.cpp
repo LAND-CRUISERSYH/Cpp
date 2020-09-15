@@ -36,7 +36,7 @@ void display(const Student *stu)
 	cout << "学生姓名: " << stu->name << "  学生年龄: " << stu->age << "  学生年龄: " << stu->score << endl;
 }
 
-int main()
+/*int main()
 {
 	struct Student s1;
 	s1.name = "SYH";
@@ -94,7 +94,7 @@ int main()
 	display(&S10);
 	cout << "学生姓名：" << S10.name << "  学生年龄: " << S10.age << "  学生分数: " << S10.score << endl;
 	return 0;
-}
+}*/
 
 
 
