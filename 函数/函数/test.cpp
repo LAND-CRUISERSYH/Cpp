@@ -231,8 +231,8 @@ int func_554(int a, int b)
 
 vector<int(*)(int, int)> ivec = { func_551,func_552,func_553,func_554 };
 
-int main(int argc,char **argv)
-{
+//int main(int argc,char **argv)
+//{
 	/*int num = fact(5);
 	cout << num << endl;*/
 
@@ -299,10 +299,10 @@ int main(int argc,char **argv)
 	//print(42, 0);						//有两个int型参数
 	//print(2.56, 3.14);					//有两个double型参数
 
-	for (auto f : ivec)
+	/*for (auto f : ivec)
 	{
 		cout << f(10, 5) << endl;
-	}
+	}*/
 
-	return 0;
-}
+	//return 0;
+//}
