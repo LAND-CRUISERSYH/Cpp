@@ -83,4 +83,3 @@ Screen::pos Screen::size() const
 }
 
 #endif // !_SCREEN_H_
-

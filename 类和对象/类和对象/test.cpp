@@ -163,7 +163,7 @@
 #include<iostream>
 #include<string>
 #include<vector>
-#include"Screen.h"
+//#include"Screen.h"
 
 using namespace std;
 
@@ -181,14 +181,14 @@ class Y
 class NoDefault
 {
 public:
-	NoDefault(int i):item(i){}
+	NoDefault(int i) :item(i) {}
 	int item;
 };
 
 class C
 {
 public:
-	C(NoDefault temp = 6):obj(temp){}
+	C(NoDefault temp = 6) :obj(temp) {}
 private:
 	NoDefault obj;
 };
@@ -223,28 +223,28 @@ istream& Sales_data::read(istream &is, Sales_data &item)
 	return is;
 }
 
-int main()
-{
-	/*Screen myScreen(5, 5, 'X');
-	myScreen.move(4, 0).set('#').display(cout);
-	myScreen.move(4, 1).set('#').display(cout);
-	cout << "\n";
-	myScreen.display(cout);
-	cout << "\n";*/
-
-	/*Sales_data book1("C++ Primer", 10, 50);
-	book1.display();*/
-
-	/*Sales_data book2;
-	book2.display();*/
-
-	/*Sales_data book3("计算机网络");
-	book3.display();*/
-
-	/*Sales_data book4(cin);
-	book4.display();*/
-
-	C c;
-	vector<C> vec(10);
-	return 0;
-}
+//int main()
+//{
+//	/*Screen myScreen(5, 5, 'X');
+//	myScreen.move(4, 0).set('#').display(cout);
+//	myScreen.move(4, 1).set('#').display(cout);
+//	cout << "\n";
+//	myScreen.display(cout);
+//	cout << "\n";*/
+//
+//	/*Sales_data book1("C++ Primer", 10, 50);
+//	book1.display();*/
+//
+//	/*Sales_data book2;
+//	book2.display();*/
+//
+//	/*Sales_data book3("计算机网络");
+//	book3.display();*/
+//
+//	/*Sales_data book4(cin);
+//	book4.display();*/
+//
+//	C c;
+//	vector<C> vec(10);
+//	return 0;
+//}
