@@ -34,7 +34,7 @@ void test()
 
 	//cout << *p << endl;                 //内存已经释放，再次访问会报错
 }
-int main()
+/*int main()
 {
 	//局部变量
 	int a = 10;
@@ -76,4 +76,4 @@ int main()
 
 	test();
 	return 0;
-}
+}*/

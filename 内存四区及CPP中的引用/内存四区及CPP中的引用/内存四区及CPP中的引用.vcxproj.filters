@@ -18,5 +18,8 @@
     <ClCompile Include="内存四区.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="CPP中的引用.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
