@@ -124,9 +124,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="test.cpp" />
+    <ClCompile Include="初始化列表.cpp" />
+    <ClCompile Include="拷贝构造函数调用时机.cpp" />
+    <ClCompile Include="构造函数和析构函数.cpp" />
     <ClCompile Include="封装.cpp" />
     <ClCompile Include="封装设计案例1.cpp" />
     <ClCompile Include="封装设计案例2.cpp" />
+    <ClCompile Include="构造函数的分类及调用.cpp" />
+    <ClCompile Include="构造函数调用规则.cpp" />
+    <ClCompile Include="深拷贝与浅拷贝.cpp" />
+    <ClCompile Include="类对象作为类成员.cpp" />
+    <ClCompile Include="静态成员.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Screen.h" />

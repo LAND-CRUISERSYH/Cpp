@@ -45,19 +45,19 @@ void isInCircle(Circle &c, Point &p)
 		cout << "µãÔÚÔ²ÄÚ" << endl;
 }
 
-int main()
-{
-	Circle c;
-	Point p1;
-	Point p2;
-
-	c.setR(3);
-	p1.setX(3);
-	p1.setY(1);
-	c.setCenter(p1);
-	p2.setX(3);
-	p2.setY(3);
-	isInCircle(c, p2);
-	
-	return 0;
-}
+//int main()
+//{
+//	Circle c;
+//	Point p1;
+//	Point p2;
+//
+//	c.setR(3);
+//	p1.setX(3);
+//	p1.setY(1);
+//	c.setCenter(p1);
+//	p2.setX(3);
+//	p2.setY(3);
+//	isInCircle(c, p2);
+//	
+//	return 0;
+//}
