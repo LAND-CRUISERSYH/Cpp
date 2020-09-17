@@ -21,6 +21,12 @@
     <ClCompile Include="封装.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="封装设计案例1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="封装设计案例2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Screen.h">

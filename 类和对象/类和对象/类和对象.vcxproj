@@ -125,6 +125,8 @@
   <ItemGroup>
     <ClCompile Include="test.cpp" />
     <ClCompile Include="封装.cpp" />
+    <ClCompile Include="封装设计案例1.cpp" />
+    <ClCompile Include="封装设计案例2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Screen.h" />

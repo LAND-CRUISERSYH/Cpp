@@ -98,30 +98,30 @@ private:
 	string lover;		//情人(只写)
 };
 
-int main()
-{
-	Circle c;             //创建一个圆对象
-	c.radius = 10;                //给圆属性赋值
-	cout << "圆的周长为: " << c.calculateZC() << endl;
-
-	Student s1, s2;			//创建两个学生对象
-	s1.name = "张三";
-	s1.number = "10086";
-	s2.name = "李四";
-	s2.number = "10001";
-	s1.showStudent();
-	s2.showStudent();
-
-	Person p1;           //实例化一个对象
-	p1.name = "李四";
-	//p1.Car = "奔驰";         //保护权限内容在类外访问不到
-	//p1.password = "789123";   //私有权限内容，类外访问不到
-
-	User man;
-	man.setName("张三");
-	man.setAge(22);
-	cout << "姓名为: " << man.getName() << endl;
-	cout << "年龄为: " << man.getAge() << endl;
-	man.setLover("灰灰");
-	return 0;
-}
+//int main()
+//{
+//	Circle c;             //创建一个圆对象
+//	c.radius = 10;                //给圆属性赋值
+//	cout << "圆的周长为: " << c.calculateZC() << endl;
+//
+//	Student s1, s2;			//创建两个学生对象
+//	s1.name = "张三";
+//	s1.number = "10086";
+//	s2.name = "李四";
+//	s2.number = "10001";
+//	s1.showStudent();
+//	s2.showStudent();
+//
+//	Person p1;           //实例化一个对象
+//	p1.name = "李四";
+//	//p1.Car = "奔驰";         //保护权限内容在类外访问不到
+//	//p1.password = "789123";   //私有权限内容，类外访问不到
+//
+//	User man;
+//	man.setName("张三");
+//	man.setAge(22);
+//	cout << "姓名为: " << man.getName() << endl;
+//	cout << "年龄为: " << man.getAge() << endl;
+//	man.setLover("灰灰");
+//	return 0;
+//}
