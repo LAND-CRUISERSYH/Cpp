@@ -63,6 +63,15 @@
     <ClCompile Include="const修饰成员函数.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="友元-全局函数做友元.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="友元-类做友元.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="友元-成员函数做友元.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Screen.h">
