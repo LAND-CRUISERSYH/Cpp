@@ -72,6 +72,9 @@
     <ClCompile Include="友元-成员函数做友元.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="C++运算符重载.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Screen.h">

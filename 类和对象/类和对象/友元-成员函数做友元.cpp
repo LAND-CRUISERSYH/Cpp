@@ -56,8 +56,8 @@ using namespace std;
 //	g.visit2();
 //}
 
-int main()
-{
-	test1();
-	return 0;
-}
+//int main()
+//{
+//	test1();
+//	return 0;
+//}

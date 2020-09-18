@@ -123,6 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="C++运算符重载.cpp" />
     <ClCompile Include="const修饰成员函数.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="this指针概念.cpp" />
