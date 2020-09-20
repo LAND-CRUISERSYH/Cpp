@@ -131,6 +131,7 @@
     <ClCompile Include="友元-全局函数做友元.cpp" />
     <ClCompile Include="友元-成员函数做友元.cpp" />
     <ClCompile Include="友元-类做友元.cpp" />
+    <ClCompile Include="继承-多继承语法.cpp" />
     <ClCompile Include="成员变量和成员函数分开存储.cpp" />
     <ClCompile Include="拷贝构造函数调用时机.cpp" />
     <ClCompile Include="构造函数和析构函数.cpp" />
@@ -142,7 +143,13 @@
     <ClCompile Include="深拷贝与浅拷贝.cpp" />
     <ClCompile Include="空指针访问成员函数.cpp" />
     <ClCompile Include="类对象作为类成员.cpp" />
-    <ClCompile Include="继承的基本语法.cpp" />
+    <ClCompile Include="继承-构造和析构顺序.cpp" />
+    <ClCompile Include="继承-继承中的对象模型.cpp" />
+    <ClCompile Include="继承-同名成员处理.cpp" />
+    <ClCompile Include="继承-同名静态成员处理.cpp" />
+    <ClCompile Include="继承-继承方式.cpp" />
+    <ClCompile Include="继承-基本语法.cpp" />
+    <ClCompile Include="继承-菱形继承.cpp" />
     <ClCompile Include="静态成员.cpp" />
   </ItemGroup>
   <ItemGroup>
