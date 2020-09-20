@@ -142,6 +142,7 @@
     <ClCompile Include="深拷贝与浅拷贝.cpp" />
     <ClCompile Include="空指针访问成员函数.cpp" />
     <ClCompile Include="类对象作为类成员.cpp" />
+    <ClCompile Include="继承的基本语法.cpp" />
     <ClCompile Include="静态成员.cpp" />
   </ItemGroup>
   <ItemGroup>
