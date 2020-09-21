@@ -99,6 +99,27 @@
     <ClCompile Include="继承-菱形继承.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="多态-基本语法cpp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="多态-多态原理剖析.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="多态-多态案例(计算器类).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="多态-纯虚函数和抽象类.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="多态-多态案例(制作饮品).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="多态-虚析构和纯虚析构.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="多态-多态案例(电脑组装).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Screen.h">
