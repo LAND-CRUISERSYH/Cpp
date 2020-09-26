@@ -19,47 +19,70 @@ using namespace std;
 
 
 //交换两个整型函数
-void swapInt(int &a, int &b)
-{
-	int temp = a;
-	a = b;
-	b = temp;
-}
-
-//交换两个浮点型函数
-void swapDouble(double &a, double &b)
-{
-	double temp = a;
-	a = b;
-	b = temp;
-}
-
-//函数模板
-template<typename T>           //声明一个模板，告诉编译器后面代码中紧跟着的T不要报错，T是一个通用类型
-void mySwap(T &a, T &b)
-{
-	T temp = a;
-	a = b;
-	b = temp;
-}
-
-int main()
-{
-	int a = 10;
-	int b = 20;
-	cout << "a = " << a << "\tb = " << b << endl;
-	//swapInt(a, b);
-	//利用函数模板来交换(两种方式)
-	//1.自动类型推导
-	//mySwap(a, b);
-	//2.显示指定类型
-	mySwap<int>(a, b);
-	cout << "a = " << a << "\tb = " << b << endl;
-
-	double c = 1.1;
-	double d = 2.2;
-	cout << "c = " << c << "\td = " << d << endl;
-	//swaoDouble(a,b);
-	cout << "c = " << c << "\td = " << d << endl;
-	return 0;
-}
+//void swapInt(int &a, int &b)
+//{
+//	int temp = a;
+//	a = b;
+//	b = temp;
+//}
+//
+////交换两个浮点型函数
+//void swapDouble(double &a, double &b)
+//{
+//	double temp = a;
+//	a = b;
+//	b = temp;
+//}
+//
+////函数模板
+//template<typename T>           //声明一个模板，告诉编译器后面代码中紧跟着的T不要报错，T是一个通用类型
+//void mySwap(T &a, T &b)
+//{
+//	T temp = a;
+//	a = b;
+//	b = temp;
+//}
+//
+//void test1()
+//{
+//	int a = 10;
+//	int b = 20;
+//	char c = 'c';
+//	//mySwap(a, b);      //正确
+//	//mySwap(a, c);        //错误     推导不出一致的T类型
+//	cout << "a = " << a << "\tb = " << b << endl;
+//}
+//
+//template<typename T>
+//void func()
+//{
+//	cout << "func()函数调用" << endl;
+//}
+//
+//void test2()
+//{
+//	func<int>();
+//}
+//
+//int main()
+//{
+//	test1();
+//	test2();
+//	//int a = 10;
+//	//int b = 20;
+//	//cout << "a = " << a << "\tb = " << b << endl;
+//	////swapInt(a, b);
+//	////利用函数模板来交换(两种方式)
+//	////1.自动类型推导
+//	////mySwap(a, b);
+//	////2.显示指定类型
+//	//mySwap<int>(a, b);
+//	//cout << "a = " << a << "\tb = " << b << endl;
+//
+//	//double c = 1.1;
+//	//double d = 2.2;
+//	//cout << "c = " << c << "\td = " << d << endl;
+//	////swaoDouble(a,b);
+//	//cout << "c = " << c << "\td = " << d << endl;
+//	return 0;
+//}
