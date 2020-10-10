@@ -123,6 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="STL-deque容器.cpp" />
     <ClCompile Include="STL-string容器.cpp" />
     <ClCompile Include="STL-vector容器.cpp" />
     <ClCompile Include="STL-初识.cpp" />
