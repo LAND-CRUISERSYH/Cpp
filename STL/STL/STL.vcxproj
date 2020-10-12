@@ -126,6 +126,7 @@
     <ClCompile Include="STL-deque容器.cpp" />
     <ClCompile Include="STL-list容器.cpp" />
     <ClCompile Include="STL-queue容器.cpp" />
+    <ClCompile Include="STL-set容器.cpp" />
     <ClCompile Include="STL-stack容器.cpp" />
     <ClCompile Include="STL-string容器.cpp" />
     <ClCompile Include="STL-vector容器.cpp" />

@@ -39,5 +39,8 @@
     <ClCompile Include="STL-list容器.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="STL-set容器.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
