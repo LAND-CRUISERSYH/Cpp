@@ -134,6 +134,8 @@
     <ClCompile Include="STL-内建函数对象.cpp" />
     <ClCompile Include="STL-函数对象.cpp" />
     <ClCompile Include="STL-初识.cpp" />
+    <ClCompile Include="STL-常用拷贝和替换算法.cpp" />
+    <ClCompile Include="STL-常用排序算法.cpp" />
     <ClCompile Include="STL-常用查找算法.cpp" />
     <ClCompile Include="STL-常用遍历算法.cpp" />
     <ClCompile Include="STL-案例-员工分组.cpp" />

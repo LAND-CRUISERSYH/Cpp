@@ -63,5 +63,11 @@
     <ClCompile Include="STL-常用查找算法.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="STL-常用排序算法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="STL-常用拷贝和替换算法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
