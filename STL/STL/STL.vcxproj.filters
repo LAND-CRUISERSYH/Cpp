@@ -48,5 +48,14 @@
     <ClCompile Include="STL-案例-员工分组.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="STL-函数对象.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="STL-谓词.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="STL-内建函数对象.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
