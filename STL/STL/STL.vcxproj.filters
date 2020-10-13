@@ -45,5 +45,8 @@
     <ClCompile Include="STL-map容器.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="STL-案例-员工分组.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
