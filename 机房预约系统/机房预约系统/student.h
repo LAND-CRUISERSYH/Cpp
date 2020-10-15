@@ -1,5 +1,11 @@
 #pragma once
 #include"identity.h"
+#include<string>
+#include<vector>
+#include"computerRoom.h"
+#include<fstream>
+#include"globalFile.h"
+#include"orderFile.h"
 
 //学生类
 class Student :public Identity
@@ -28,4 +34,7 @@ public:
 
 
 	int m_sId;               //学号
+
+	//机房容器
+	vector<ComputerRoom> vCom;
 };

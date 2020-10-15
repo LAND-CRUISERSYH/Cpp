@@ -19,6 +19,93 @@ void show_Menu()                    //页面主菜单
 	cout << "请输入您的选择: ";	
 }
 
+//进入管理员子菜单
+void managerMenu(Identity* &manager)
+{
+	while (true)
+	{
+		//调用管理员子菜单
+		manager->Menu();
+
+		//将父类指针转为子类指针  可调用子类其他接口
+		Manager *man = (Manager*)manager;
+
+		int select = 0;            //用于接收用户的选项
+		cin >> select;
+		if (select == 1)
+		{
+			//添加账号
+			man->addPerson();
+		}
+		else if (select == 2)
+		{
+			//查看账号
+			man->showPerson();
+		}
+		else if (select == 3)
+		{
+			//查看机房
+			man->showComputer();
+		}
+		else if (select == 4)
+		{
+			//清空预约
+			man->clearFile();
+		}
+		else      //注销登录
+		{
+			delete manager;          //销毁掉堆区对象
+			cout << "注销成功!" << endl;
+			system("pause");
+			system("cls");
+			return;
+		}
+	}
+}
+
+//进入学生子菜单
+void studentMenu(Identity* &student)
+{
+	while (true)
+	{
+		//调用学生菜单页面
+		student->Menu();
+
+		//将父类指针转为子类指针  可调用子类其他接口
+		Student* stu = (Student*)student;
+		int select = 0;                //用于接收用户输入
+		cin >> select;
+		if (select == 1)
+		{
+			//申请预约
+			stu->ApplyOrder();
+		}
+		else if (select == 2)
+		{
+			//查看自身预约
+			stu->showMyOrder();
+		}
+		else if (select == 3)
+		{
+			//查看所有预约
+			stu->showAllOrder();
+		}
+		else if (select == 4)
+		{
+			//取消预约
+			stu->cancelOrder();
+		}
+		else             //注销登录
+		{
+			delete student;          //销毁掉堆区对象
+			cout << "注销成功!" << endl;
+			system("pause");
+			system("cls");
+			return;
+		}
+	}
+}
+
 //登录功能         参数1  操作文件名    参数2   操作身份类型
 void LoginIn(string fileName, int type)
 {
@@ -74,6 +161,7 @@ void LoginIn(string fileName, int type)
 				system("cls");
 				person = new Student(id, name, pwd);
 				//进入学生身份子菜单
+				studentMenu(person);
 				return;
 			}
 		}
@@ -111,6 +199,7 @@ void LoginIn(string fileName, int type)
 				system("cls");
 				person = new Manager(name, pwd);
 				//进入管理员身份子菜单
+				managerMenu(person);
 				return;
 			}
 		}
