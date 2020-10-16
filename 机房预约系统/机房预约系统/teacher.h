@@ -1,5 +1,12 @@
 #pragma once
 #include"identity.h"
+#include<string>
+#include"orderFile.h"
+#include<iostream>
+#include<vector>
+
+using namespace std;
+
 
 //¿œ ¶¿‡
 class Teacher :public Identity

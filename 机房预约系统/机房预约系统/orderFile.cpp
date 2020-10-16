@@ -84,12 +84,12 @@ void OrderFile::updateOrder()
 	ofstream ofs(ORDER_FILE, ios::out | ios::trunc);
 	for (int i = 0; i < m_Size; i++)
 	{
-		ofs << "日期: " << this->m_orderData[i]["日期"] << " ";
-		ofs << "时间段: " << this->m_orderData[i]["时间段"] << " ";
-		ofs << "学生学号 " << this->m_orderData[i]["学生学号"] << " ";
-		ofs << "学生姓名: " << this->m_orderData[i]["学生姓名"] << " ";
-		ofs << "机房编号: " << this->m_orderData[i]["机房编号"] << " ";
-		ofs << "审核状态: " << this->m_orderData[i]["审核状态"] << endl;
+		ofs << "date:" << this->m_orderData[i]["date"] << " ";
+		ofs << "interval:" << this->m_orderData[i]["interval"] << " ";
+		ofs << "stuId:" << this->m_orderData[i]["stuId"] << " ";
+		ofs << "stuName:" << this->m_orderData[i]["stuName"] << " ";
+		ofs << "roomId:" << this->m_orderData[i]["roomId"] << " ";
+		ofs << "status:" << this->m_orderData[i]["status"] << endl;
 	}
 	ofs.close();
 }

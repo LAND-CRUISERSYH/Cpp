@@ -106,6 +106,39 @@ void studentMenu(Identity* &student)
 	}
 }
 
+//进入老师子菜单
+void teacherMenu(Identity* &teacher)
+{
+	while (true)
+	{
+		//调用老师子菜单界面
+		teacher->Menu();
+
+		//将父类指针转为子类指针  可调用子类其他接口
+		Teacher* tea = (Teacher*)teacher;
+		int select = 0;                //用于接收用户输入
+		cin >> select;
+		if (select == 1)
+		{
+			//查看所有预约
+			tea->showAllOrder();
+		}
+		else if (select == 2)
+		{
+			//审核预约
+			tea->valiOrder();
+		}
+		else
+		{
+			delete teacher;
+			cout << "注销成功!" << endl;
+			system("pause");
+			system("cls");
+			return;
+		}
+	}
+}
+
 //登录功能         参数1  操作文件名    参数2   操作身份类型
 void LoginIn(string fileName, int type)
 {
@@ -181,6 +214,7 @@ void LoginIn(string fileName, int type)
 				system("cls");
 				person = new Teacher(id, name, pwd);
 				//进入教师身份子菜单
+				teacherMenu(person);
 				return;
 			}
 		}
