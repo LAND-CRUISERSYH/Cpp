@@ -12,7 +12,7 @@ Manager::Manager(string name, string pwd)
 	//初始化管理员信息
 	m_Name = name;
 	m_pwd = pwd;
-	   
+
 	//初始化容器   获取文件中老师和学生的信息
 	this->initVector();
 
@@ -186,7 +186,7 @@ void Manager::initVector()
 
 //检测重复      参数1  检测学号或教师编号   参数2  检测类型
 bool Manager::checkRepeat(int id, int type)
-{ 
+{
 	if (type == 1)           //检测学生
 	{
 		for (vector<Student>::iterator it = vStu.begin(); it != vStu.end(); it++)

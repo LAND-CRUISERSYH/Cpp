@@ -88,7 +88,7 @@ void Teacher::valiOrder()
 			cout << "Ñ§ÉúÑ§ºÅ: " << of.m_orderData[i]["stuId"] << " ";
 			cout << "Ñ§ÉúÐÕÃû: " << of.m_orderData[i]["stuName"] << " ";
 			cout << "»ú·¿±àºÅ: " << of.m_orderData[i]["roomId"] << "  ";
-			cout << "ÉóºË×´Ì¬: ÉóºËÖÐ"<< endl;
+			cout << "ÉóºË×´Ì¬: ÉóºËÖÐ" << endl;
 		}
 	}
 	vector<int>::size_type select = 0;

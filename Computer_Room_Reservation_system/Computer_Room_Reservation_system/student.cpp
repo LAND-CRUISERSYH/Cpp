@@ -17,7 +17,7 @@ Student::Student(int id, string name, string pwd)
 	//初始化机房信息
 	ifstream ifs;
 	ifs.open(COMPUTER_FILE, ios::in);
-	
+
 	ComputerRoom com;
 	while (ifs >> com.m_id&&ifs >> com.m_size)
 	{
@@ -43,7 +43,7 @@ void Student::Menu()
 void Student::ApplyOrder()
 {
 	cout << "机房开放时间为周一至周五!" << endl;
-	 
+
 	int date = 0;        //日期
 	int interval = 0;		//时间段
 	int room = 0;			//机房编号
@@ -81,7 +81,7 @@ void Student::ApplyOrder()
 			cout << "输入有误，请重新输入" << endl;
 	}
 	cout << "预约成功!审核中!" << endl;
-	
+
 	//将信息写入到文件中
 	ofstream ofs;
 	ofs.open(ORDER_FILE, ios::app);

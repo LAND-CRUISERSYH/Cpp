@@ -5,7 +5,7 @@ OrderFile::OrderFile()
 {
 	ifstream ifs;
 	ifs.open(ORDER_FILE, ios::in);
-	 
+
 	string date;            //日期
 	string interval;		//时间段
 	string stuId;			//学生编号
@@ -30,7 +30,7 @@ OrderFile::OrderFile()
 			m.insert(make_pair(key, value));
 		}
 		//截取时间段
-	    pos = interval.find(":");
+		pos = interval.find(":");
 		if (pos != -1)
 		{
 			key = interval.substr(0, pos);

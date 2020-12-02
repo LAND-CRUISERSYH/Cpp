@@ -15,43 +15,43 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="机房预约系统.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="student.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="teacher.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="manager.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="orderFile.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="identity.h">
+    <ClInclude Include="teacher.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="student.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="teacher.h">
+    <ClInclude Include="orderFile.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="manager.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="globalFile.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="computerRoom.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="orderFile.h">
+    <ClInclude Include="globalFile.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="identity.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="teacher.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="orderFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="student.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="manager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
